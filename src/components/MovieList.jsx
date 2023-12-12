@@ -6,7 +6,7 @@ const MovieList = ({ Movies, setMovies }) => {
     <Row>
       {/* Movies Component */}
       {Movies.map((element) => (
-        <MovieCard Movies={element} />
+        <MovieCard Movies={element} key={element.id} />
       ))}
     </Row>
   );
