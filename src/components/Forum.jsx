@@ -73,6 +73,8 @@ const Forum = ({ onAddMovie }) => {
                 name="rating"
                 value={formData.rating}
                 onChange={handleInputChange}
+                min="0"
+                max="5"
               />
             </Form.Group>
 

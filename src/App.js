@@ -49,11 +49,13 @@ function App() {
     setMovies([...Movies, newMovie]);
   };
   const handleFilterChange = (searchText) => {
-    const filtered = Movies.filter((movie) =>
-      movie.title.toLowerCase().includes(searchText.toLowerCase())
+    const filtered = Movies.filter((Movie) =>
+      Movie.title.toLowerCase().includes(searchText.toLowerCase())
     );
+
     setFilteredMovies(filtered);
   };
+
   return (
     <Fragment>
       <Filter onFilterChange={handleFilterChange} />{" "}

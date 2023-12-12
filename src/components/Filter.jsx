@@ -4,10 +4,7 @@ import Form from "react-bootstrap/Form";
 const Filter = ({ onFilterChange }) => {
   const handleInputChange = (e) => {
     const searchText = e.target.value;
-    const searchRating = e.target.value;
-
     onFilterChange(searchText);
-    onFilterChange(searchRating);
   };
 
   return (
