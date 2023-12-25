@@ -13,7 +13,7 @@ const Forum = ({ onAddMovie }) => {
   });
 
   // Use a counter to generate unique IDs for movies
-  const [idCounter, setIdCounter] = useState(5);
+  // const [idCounter, setIdCounter] = useState();
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -23,7 +23,7 @@ const Forum = ({ onAddMovie }) => {
   const handleAddMovie = () => {
     // Validation logic can be added here
     const newMovie = {
-      id: idCounter, // Use the current ID counter value
+      // id: idCounter, // Use the current ID counter value
       title: formData.title,
       description: formData.description,
       rating: `${formData.rating}`,
@@ -33,7 +33,7 @@ const Forum = ({ onAddMovie }) => {
     onAddMovie(newMovie);
 
     // Increment the ID counter for the next movie
-    setIdCounter((prevCounter) => prevCounter + 1);
+    // setIdCounter((prevCounter) => prevCounter + 1);
 
     setFormData({
       title: "",
